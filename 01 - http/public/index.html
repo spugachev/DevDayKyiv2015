@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test page</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<img src="img.jpg" id="imgMain" /><br/>
+<script type="text/javascript">
+	var imgMain = document.getElementById("imgMain");
+	imgMain.addEventListener("click", function(){
+		  var script = document.createElement('script');
+    	  script.src = '/data1.js';
+    	  document.body.appendChild(script);
+	});
+</script>
+</body>
+</html>

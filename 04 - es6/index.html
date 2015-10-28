@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+	<script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
+
+<script type="module">
+"use strict"; 
+
+class Greeter {
+	constructor(){
+		this.i = 0;
+	}
+
+	doWork(name = "Sergey Pugachev"){
+		this.name = name;
+
+		setInterval(()=> {
+			this.i++;
+
+			let element = document.querySelector("h1");
+          	element.innerHTML = `Hello, ${this.name}: ${this.i}`;
+		}, 500);
+
+		return [this.name, this.i];
+	}
+}
+
+let name,i;
+let grt = new Greeter();
+[name, i] = grt.doWork();
+
+console.log(`name: ${name}`);
+console.log(`i: ${i}`);
+
+if (i == 0) {
+  var num = 5;
+  let test = 10;
+}
+
+console.log(`num: ${num}`);
+console.log(`test: ${test}`)
+</script>
+</head>
+<body>
+<h1>Hello World</h1>
+</body>
+</html>

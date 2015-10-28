@@ -1,0 +1,86 @@
+Polymer:
+python -m SimpleHTTPServer 3000
+
+<paper-drawer-panel>
+  <div drawer>Hello</div>
+  <div main>World</div>
+</paper-drawer-panel>
+=========================================================
+<paper-drawer-panel>
+ <paper-scroll-header-panel drawer fixed>
+
+ </paper-scroll-header-panel>
+
+ <paper-scroll-header-panel main condenses keep-condensed-header>
+
+ </paper-scroll-header-panel>
+</paper-drawer-panel>
+=========================================================
+ <paper-scroll-header-panel drawer fixed>
+  <paper-toolbar>
+    <span class="paper-font-title">Menu</span>
+  </paper-toolbar>
+ </paper-scroll-header-panel>
+=========================================================
+
+ <paper-scroll-header-panel drawer fixed>
+  <paper-toolbar>
+    <span class="paper-font-title">Menu</span>
+  </paper-toolbar>
+
+  <paper-menu>
+    <a href="#">
+      <iron-icon icon="home"></iron-icon>
+      <span>Home</span>
+    </a>
+
+    <a href="#">
+      <iron-icon icon="info"></iron-icon>
+      <span>Users</span>
+    </a>
+
+    <a href="#">
+      <iron-icon icon="mail"></iron-icon>
+      <span>Contact</span>
+    </a>
+  </paper-menu>
+
+ </paper-scroll-header-panel>
+=========================================================
+
+ <paper-scroll-header-panel main condenses keep-condensed-header>
+  <paper-toolbar class="tall" id="mainToolbar">
+      <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+      <span class="flex"></span>
+
+      <paper-icon-button icon="refresh"></paper-icon-button>
+      <paper-icon-button icon="search"></paper-icon-button>
+
+      <div class="middle middle-container center horizontal layout">
+        <div class="app-name">//dev.day * Kyiv</div>
+      </div>
+
+      <div class="bottom bottom-container center horizontal layout">
+        <div class="bottom-title paper-font-subhead">The future of the web today</div>
+      </div>
+  </paper-toolbar>
+ </paper-scroll-header-panel>
+=========================================================
+<paper-drawer-panel force-narrow>
+=========================================================
+  <div class="content">
+    <iron-pages attr-for-selected="data-route" selected="home">
+      <section data-route="home">
+        <paper-material elevation="2">
+          <p class="paper-font-body2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet mi eget malesuada elementum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis nec sollicitudin nulla. Phasellus eu tincidunt odio. Phasellus massa orci, sagittis et nisi non, dictum condimentum turpis. Nulla aliquam viverra odio, ac imperdiet tortor pulvinar id. Nulla eget porta purus. Sed scelerisque feugiat nunc, id imperdiet augue tincidunt sed. Maecenas quis lorem ut arcu gravida vehicula. Sed efficitur, lorem nec imperdiet condimentum, ligula purus posuere lorem, sed suscipit purus est dictum nulla. In euismod metus a tellus faucibus tincidunt. Nullam at nisl sollicitudin odio bibendum pulvinar.
+          </p>
+        </paper-material>
+
+        <paper-material elevation="1">
+          <p class="paper-font-body2">This is another card.</p>
+        </paper-material>
+      </section>
+    </iron-pages>
+  </div>
+=========================================================
