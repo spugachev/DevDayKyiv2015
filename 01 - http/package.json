@@ -2,7 +2,7 @@
   "name": "httpx2",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "http.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "supervisor http.js"
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http2": "^3.2.0",
+    "express": "^4.13.3",
     "spdy": "^2.0.5"
   }
 }
